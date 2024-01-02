@@ -32,7 +32,7 @@ However, with so many youth soccer clubs in town, sometimes it's hard to decide 
 Youth soccer clubs are different.
 Some soccer clubs offer soccer camps for k-8 grade kids just for leisure as after-school activities, while others are serious about installing a systematic training program for young players who aim at joining their high school varsity team or even playing at the collegiate level. I was such a kid when I was 11 years old.
 
-In order to play at the highest level and possibly reach the collegiate level, it is crucial to climb up the soccer pyramid. The soccer pyramid essentially divides clubs based on the quality of the leagues they participate in. MLS Next is the highest level and below that there is a second tier—the National Academy League and ECNL. Regional leagues make up the third/fourth tier. These teams compete at a local level within just a within a county (e.g., WYSL) or state ("NYCSL")
+In order to play at the highest level and possibly reach the collegiate level, it is crucial to climb up the soccer pyramid. The soccer pyramid essentially divides clubs based on the quality of the leagues they participate in. MLS Next is the highest level and below that there is a second tier—the National Academy League and ECNL. Regional leagues make up the third/fourth tier. These teams compete at a local level within just a county (e.g., WYSL) or state ("NYCSL")
 
 Throughout my youth career, I wanted to play at a better club each year because I knew it would make me a better player, and competing against better players brought me joy. At the age of twelve, I joined my first team playing in the Westchester Youth Soccer League—frankly one of the lowest levels you can play, but a great starting point. Since then, I have climbed up the soccer pyramid, participating in EDP, USYS National League, and now the National Academy League. In between switching teams, I spent countless hours of tedious research to find out which club would challenge me as a player and also accommodate financial needs.
 
@@ -66,3 +66,5 @@ Boys, girls, or both: almost all clubs accept both boys and girls, but the team 
 | Chappaqua Youth Soccer Club | boy: 9-17; girl: 9-16 | EDP, WYSL | Horace Greeley, Gedney Park, Amsterdam Park, local schools | Medium
 
 Thank you for reading. I hope you have a better understanding of youth soccer clubs in Westchester, NY. It is my ultimate goal that the club you choose will build memories for the rest of your or your children’s lives. 
+
+![image-title-here](/assets/images/soccer.jpg){:class="img-responsive"}

@@ -6,7 +6,7 @@ permalink: /about/
 
 This page is made by a student, playing varsity soccer in a local high school.
 
-Email: myemail@gmail.com
+Email: TBD
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) -->
 
