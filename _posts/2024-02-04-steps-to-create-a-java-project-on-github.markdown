@@ -26,11 +26,11 @@ Github is a platform that allows developers to create, store, manage and share t
         git clone git@github.com:your-github-account/your-project-name.git
     ```
 
-5. Open your project in Visual Studio Code and add some java code;
+5. Open your project in Visual Studio Code. Create a new file named main.java. Then add some java code;
 
 
     ```Java
-    public class Main {
+    public class main {
         public static void main(String[] args) throws Exception {
             System.out.println("hello world");
         }
