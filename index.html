@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steven Kang — CS @ University of Michigan</title>
+  <meta name="description" content="Portfolio of Steven Kang — Computer Science student at the University of Michigan. Data science research, NLP, full-stack development, and open-source tools." />
+  <meta name="author" content="Steven Kang" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Steven Kang — CS @ University of Michigan" />
+  <meta property="og:description" content="Data science research, NLP pipelines, and open-source CLI tools." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- CRT scanline overlay -->
+  <div id="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Cursor-following pixel sprite (desktop only) -->
+  <div id="pixel-sprite" aria-hidden="true"></div>
+
+  <!-- Konami code confetti container -->
+  <div id="konami-confetti" aria-hidden="true"></div>
+
+  <!-- Sound toggle button -->
+  <button id="sound-toggle" class="sound-toggle" aria-label="Sound effects off, click to unmute">🔇 SFX OFF</button>
+
+  <!-- ============================================
+       NAVIGATION (appears after scrolling past hero)
+       ============================================ -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SK</a>
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       1. HERO / LANDING
+       ============================================ -->
+  <section id="hero" class="section">
+
+
+    <h1 class="hero-name glitch-text fade-in">STEVEN KANG</h1>
+    <p class="hero-subtitle fade-in">Computer Science · University of Michigan</p>
+    <p class="hero-tagline fade-in">
+      <span id="hero-tagline-text" data-text="Building tools, researching data, shipping code."></span><span class="cursor-blink"></span>
+    </p>
+
+    <button id="press-start" class="press-start-btn fade-in" aria-label="Scroll to content">
+      ▶ PRESS START
+    </button>
+
+    <p class="insert-coin fade-in" aria-hidden="true">INSERT COIN TO CONTINUE</p>
+  </section>
+
+  <!-- ============================================
+       SCROLLING MARQUEE
+       ============================================ -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="coin">🪙</span> Python</span>
+      <span class="marquee-item"><span class="coin">🪙</span> C++</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Java</span>
+      <span class="marquee-item"><span class="coin">🪙</span> R</span>
+      <span class="marquee-item"><span class="coin">🪙</span> SQL</span>
+      <span class="marquee-item"><span class="coin">🪙</span> pandas</span>
+      <span class="marquee-item"><span class="coin">🪙</span> scikit-learn</span>
+      <span class="marquee-item"><span class="coin">🪙</span> BeautifulSoup</span>
+      <span class="marquee-item"><span class="coin">🪙</span> LiteLLM</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Next.js</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Git</span>
+      <span class="marquee-item"><span class="coin">🪙</span> CMake</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Supabase</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Vercel</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item"><span class="coin">🪙</span> Python</span>
+      <span class="marquee-item"><span class="coin">🪙</span> C++</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Java</span>
+      <span class="marquee-item"><span class="coin">🪙</span> R</span>
+      <span class="marquee-item"><span class="coin">🪙</span> SQL</span>
+      <span class="marquee-item"><span class="coin">🪙</span> pandas</span>
+      <span class="marquee-item"><span class="coin">🪙</span> scikit-learn</span>
+      <span class="marquee-item"><span class="coin">🪙</span> BeautifulSoup</span>
+      <span class="marquee-item"><span class="coin">🪙</span> LiteLLM</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Next.js</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Git</span>
+      <span class="marquee-item"><span class="coin">🪙</span> CMake</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Supabase</span>
+      <span class="marquee-item"><span class="coin">🪙</span> Vercel</span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       2. ABOUT
+       ============================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// PLAYER PROFILE</p>
+      <h2 class="section-title fade-in">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p class="fade-in">
+            Computer Science student at the University of Michigan
+            working in data science and NLP research. Enjoy building software tools
+            and looking to learn more about systems programming. 
+          </p>
+          <p class="fade-in">
+            Current roles have provided experienced in building web scraping pipelines, LLM evaluation frameworks,
+            and open-source CLI tools. Have conducted research across multiple
+            departments at UMich, from institutional research data pipelines to
+            NLP-powered policy analysis.
+          </p>
+
+          <div class="about-stats fade-in">
+            <div class="stat-box">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Research Roles</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">2</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal-style decorator -->
+        <div class="about-terminal fade-in-right">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">steven@umich</span>:<span class="cmd">~$ whoami</span></p>
+            <p class="output">Steven Kang</p>
+            <p><span class="prompt">steven@umich</span>:<span class="cmd">~$ cat major.txt</span></p>
+            <p class="output">B.S. Computer Science</p>
+
+            <p><span class="prompt">steven@umich</span>:<span class="cmd">~$ _</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. EXPERIENCE — Level Select
+       ============================================ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// SELECT LEVEL</p>
+      <h2 class="section-title fade-in">Experience</h2>
+
+      <div class="level-select-container stagger-children">
+
+        <!-- LEVEL 3 — Rackham Graduate School -->
+        <div class="level-card fade-in" tabindex="0" role="button" aria-expanded="false" aria-controls="level3-details">
+          <div class="level-header">
+            <span class="level-number">LVL 3</span>
+            <div class="level-info">
+              <h3 class="level-role">Data Science Research Assistant</h3>
+              <p class="level-org">Rackham Graduate School · U-M Institutional Research</p>
+            </div>
+            <div class="level-meta">
+              <span class="level-date">JUN 2026 — PRESENT</span>
+              <span class="level-status current">★ CURRENT</span>
+            </div>
+            <span class="level-expand-icon" aria-hidden="true">▾</span>
+          </div>
+          <div class="level-details" id="level3-details">
+            <ul>
+              <li>Built web scraping pipelines using Python and BeautifulSoup to extract and link PhD student and advisor records across institutional and public academic sources, creating a unified dataset for mentorship research</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">BeautifulSoup</span>
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">Data Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 2 — School of Information -->
+        <div class="level-card fade-in" tabindex="0" role="button" aria-expanded="false" aria-controls="level2-details">
+          <div class="level-header">
+            <span class="level-number">LVL 2</span>
+            <div class="level-info">
+              <h3 class="level-role">Research Assistant</h3>
+              <p class="level-org">School of Information · U-M — Joshua Ashkinaze (supervisor)</p>
+            </div>
+            <div class="level-meta">
+              <span class="level-date">MAY 2026 — PRESENT</span>
+              <span class="level-status current">★ CURRENT</span>
+            </div>
+            <span class="level-expand-icon" aria-hidden="true">▾</span>
+          </div>
+          <div class="level-details" id="level2-details">
+            <ul>
+              <li>Built an internal LLM evaluation framework that measured factual accuracy across 50 election ballot measures, uncovering 4% error rate and root-causing failures into distinct categories</li>
+              <li>Refactored an LLM pipeline that extracts structured information (key entities, relationships, and supporting evidence) from text to have configurable options for how much context the system uses as input</li>
+              <li>Ran statistical comparisons of output quality across different configurations using automated metrics</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LiteLLM</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">LLM Evaluation</span>
+              <span class="tech-tag">Statistical Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 1 — Ford School of Public Policy -->
+        <div class="level-card complete fade-in" tabindex="0" role="button" aria-expanded="false" aria-controls="level1-details">
+          <div class="level-header">
+            <span class="level-number">LVL 1</span>
+            <div class="level-info">
+              <h3 class="level-role">Research Assistant</h3>
+              <p class="level-org">Gerald R. Ford School of Public Policy · U-M — Dr. Devin Judge-Lord (supervisor)</p>
+            </div>
+            <div class="level-meta">
+              <span class="level-date">SEP 2025 — APR 2026</span>
+              <span class="level-status complete">✓ COMPLETE</span>
+            </div>
+            <span class="level-expand-icon" aria-hidden="true">▾</span>
+          </div>
+          <div class="level-details" id="level1-details">
+            <ul>
+              <li>Constructed a crosswalk of 800,000+ unique corporations using regular expressions and token-based string-matching algorithms in Python to identify corporate aliases in 900,000+ records across multiple datasets</li>
+              <li>Built an open-source software package in R for users to search corporation aliases in semi-structured text</li>
+              <li>Deployed a full-stack web application using Next.js and PostgreSQL to accept alias suggestions from users</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">R</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Regex</span>
+            </div>
+            <a href="https://github.com/judgelord/corporations" class="level-link" target="_blank" rel="noopener noreferrer">
+              📂 View on GitHub →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4. SKILLS — Inventory / Stat Screen
+       ============================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// INVENTORY</p>
+      <h2 class="section-title fade-in">Skills & Stats</h2>
+
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title"><span class="skill-category-icon">⚔️</span> Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Python <span class="skill-xp">LVL 9</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill cyan" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C++ <span class="skill-xp">LVL 7</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill magenta" data-width="70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java <span class="skill-xp">LVL 6</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill gold" data-width="60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">R <span class="skill-xp">LVL 7</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill green" data-width="70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL <span class="skill-xp">LVL 7</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill cyan" data-width="70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Libraries & Frameworks -->
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title"><span class="skill-category-icon">🛡️</span> Libraries & Frameworks</h3>
+          <div class="skill-inventory">
+            <div class="inventory-item"><span class="item-icon">📊</span>pandas</div>
+            <div class="inventory-item"><span class="item-icon">🤖</span>LiteLLM</div>
+            <div class="inventory-item"><span class="item-icon">🧠</span>scikit-learn</div>
+            <div class="inventory-item"><span class="item-icon">📈</span>Seaborn</div>
+            <div class="inventory-item"><span class="item-icon">🕸️</span>BeautifulSoup</div>
+            <div class="inventory-item"><span class="item-icon">🗄️</span>SQLAlchemy</div>
+            <div class="inventory-item"><span class="item-icon">🧪</span>GoogleTest</div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title"><span class="skill-category-icon">🎒</span> Tools & Platforms</h3>
+          <div class="skill-inventory">
+            <div class="inventory-item"><span class="item-icon">🔀</span>Git</div>
+            <div class="inventory-item"><span class="item-icon">📓</span>Jupyter</div>
+            <div class="inventory-item"><span class="item-icon">⚡</span>Supabase</div>
+            <div class="inventory-item"><span class="item-icon">▲</span>Vercel</div>
+            <div class="inventory-item"><span class="item-icon">📮</span>Postman</div>
+            <div class="inventory-item"><span class="item-icon">🔧</span>CMake</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       5. PROJECTS
+       ============================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// QUEST LOG</p>
+      <h2 class="section-title fade-in">Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- Warden -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">🖥️</span>
+            <h3 class="project-name">Warden — macOS Process Manager</h3>
+          </div>
+          <div class="project-card-body">
+            <ul class="project-description">
+              <li>Open-source macOS CLI tool using low-level system APIs (libproc) to scan running processes, group by parent application, and rank search results with a custom heap-based algorithm</li>
+              <li>Configured build system using CMake, validated core logic with unit tests via GoogleTest, and setup installation via Homebrew tap</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">CMake</span>
+              <span class="tech-tag">libproc</span>
+              <span class="tech-tag">GoogleTest</span>
+              <span class="tech-tag">Homebrew</span>
+            </div>
+            <a href="https://github.com/stevenhanwen/Warden" class="project-link" target="_blank" rel="noopener noreferrer">
+              📂 View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Timesheet Management System -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <span class="project-icon">📋</span>
+            <h3 class="project-name">Timesheet Management System</h3>
+          </div>
+          <div class="project-card-body">
+            <ul class="project-description">
+              <li>Designed a SQLite database schema for a software firm to efficiently store and query time-sheet records</li>
+              <li>Implemented database models using SQLAlchemy ORM with normalized table relationships</li>
+              <li>Wrote a data cleaning pipeline to standardize raw time-sheet inputs for automated and consistent formatting</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">SQLAlchemy</span>
+              <span class="tech-tag">Data Cleaning</span>
+            </div>
+            <span class="project-link" style="cursor: default; opacity: 0.5;">
+              🏢 Innovation for Impact
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       6. EDUCATION & LEADERSHIP — Badges
+       ============================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// ACHIEVEMENTS UNLOCKED</p>
+      <h2 class="section-title fade-in">Education & Leadership</h2>
+
+      <div class="badges-grid stagger-children">
+
+        <!-- Education Badge -->
+        <div class="badge-card fade-in">
+          <div class="badge-icon">🎓</div>
+          <h3 class="badge-title">University of Michigan</h3>
+          <p class="badge-subtitle">Bachelor of Science in Computer Science</p>
+          <p class="badge-detail">Ann Arbor, MI · Expected Graduation: Dec 2028</p>
+
+          <p class="unlocked-label">✦ ACHIEVEMENT UNLOCKED ✦</p>
+        </div>
+
+        <!-- Leadership Badge -->
+        <div class="badge-card fade-in">
+          <div class="badge-icon">⚡</div>
+          <h3 class="badge-title">Business Director</h3>
+          <p class="badge-subtitle">Innovation for Impact — Technology Consulting Group</p>
+          <p class="badge-detail">Apr 2026 — Present</p>
+          <ul class="badge-details-list">
+            <li>Manage club finances including budgeting, dues collection, reimbursements, and financial reporting</li>
+            <li>Coordinate administrative tasks such as attendance tracking, roster updates, and meeting room reservations</li>
+          </ul>
+          <p class="unlocked-label">✦ ACTIVE ROLE ✦</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       7. CONTACT
+       ============================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-label fade-in">// GAME OVER? NOT YET</p>
+      <h2 class="section-title fade-in">Get In Touch</h2>
+
+      <p class="contact-tagline fade-in">
+        Want to connect, collaborate, or just say hi? Pick your preferred channel below.
+      </p>
+
+      <div class="contact-links fade-in">
+        <a href="mailto:stevenhk@umich.edu" class="contact-link" id="contact-email">
+          <span class="contact-link-icon">✉️</span> stevenhk@umich.edu
+        </a>
+        <a href="https://github.com/stevenhanwen" class="contact-link" target="_blank" rel="noopener noreferrer" id="contact-github">
+          <span class="contact-link-icon">💻</span> GitHub
+        </a>
+        <a href="https://linkedin.com/in/-steven-kang" class="contact-link" target="_blank" rel="noopener noreferrer" id="contact-linkedin">
+          <span class="contact-link-icon">🔗</span> LinkedIn
+        </a>
+      </div>
+
+      <div class="footer fade-in">
+        <p class="footer-text">
+          © 2026 Steven Kang · Built with HTML, CSS & JS<br />
+          🎮 Try the Konami Code for a surprise
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
