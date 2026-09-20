@@ -191,8 +191,9 @@
           </div>
           <div class="level-details" id="level3-details">
             <ul>
-              <li>Built web scraping pipelines using Python and the Beautiful Soup library to extract and link PhD student and advisor records from public academic sources with institutional data for mentorship research, increasing advisor coverage by 28%</li>
-              <li>Integrated the Google Gemini API (with URL-context tooling) to classify and extract structured data (name, title, lab, advisors, department) from 1000+ unstructured student profile pages</li>
+              <li>Built a data pipeline to support mentorship research by linking PhD student and advisor records with institutional data, using Python and Beautiful Soup to scrape records from public academic sources, increasing advisor coverage by 28%</li>
+              <li>Integrated the Google Gemini API with its URL-context tooling to process live web pages directly, in order to classify and extract structured data (name, title, lab, advisors, department) from over 1,000 unstructured student profile pages</li>
+              <<li>Resolved 90% of collected advisor names to unique faculty IDs using fuzzy matching from the rapidfuzz library</li>>
             </ul>
             <div class="tech-tags">
               <span class="tech-tag">Python</span>
@@ -220,9 +221,9 @@
           </div>
           <div class="level-details" id="level2-details">
             <ul>
-              <li>Built a quiz-based evaluation framework to test whether stakeholder descriptions from an LLM extraction-entailment model captured key ballot information, achieving 95% answer accuracy across 50 measures</li>
-              <li>Refactored an LLM pipeline that extracts structured information (key entities, relationships, and supporting evidence) from text to have configurable options for how much context the system uses as input</li>
-              <li>Ran statistical comparisons of output quality across different configurations using automated metrics</li>
+              <li>Built a quiz-based evaluation framework using the LiteLLM library to test whether stakeholder descriptions from an LLM extraction-entailment model captured key ballot information, achieving 95% answer accuracy across 50 measures</li>
+              <li>Refactored an LLM pipeline that extracts structured information (key entities, description of impact, and text evidence) from ballots to have configurable options for how much context the system uses as input (raw text or summaries)</li>
+              <li>Ran comparisons of output quality on 750 extractions across 15 LLM model-context configurations with NLP libraries</li>
             </ul>
             <div class="tech-tags">
               <span class="tech-tag">Python</span>
@@ -249,8 +250,8 @@
           </div>
           <div class="level-details" id="level2-details">
             <ul>
-              <li>Led section labs for EECS 183 (Elementary Programming Concepts), held office hours, and handled administrative tasks</li>
-              <li>Coordinated course materials for exam review sessions and designed the weekly lab section content</li>
+              <li>Taught weekly section labs with assignments that covered fundamental programming concepts in Python, including core data structures, object oriented programming, and data manipulation using Pandas DataFrames to 35+ students</li>
+              <li>Supported student learning by preparing weekly lab section content, holding office hours, handling administrative tasks, coordinating exam review sessions, and verifying exam and homework questions for 300+ students</li>
             </ul>
             <div class="tech-tags">
               <span class="tech-tag">Python</span>
@@ -275,9 +276,9 @@
           </div>
           <div class="level-details" id="level1-details">
             <ul>
-              <li>Constructed a crosswalk of 800,000+ unique corporations using regular expressions and token-based string-matching algorithms in Python to identify corporate aliases in 900,000+ records across multiple datasets</li>
-              <li>Built an open-source software package in R for users to search corporation aliases in semi-structured text</li>
-              <li>Deployed a full-stack web application using Next.js and PostgreSQL to accept alias suggestions from users</li>
+              <li>Constructed a crosswalk to match inconsistent corporate names across datasets, using regular expressions and token-based string-matching in Python to identify aliases for 800,000+ corporations across 900,000+ records</li>
+              <li>Built and open-sourced an R package that identifies corporate names in unstructured text to support entity resolution</li>
+              <li>Deployed a web application on Vercel with Next.js and Supabase to accept alias suggestions from users</li>
             </ul>
             <div class="tech-tags">
               <span class="tech-tag">Python</span>
@@ -315,7 +316,11 @@
               <div class="skill-bar-track"><div class="skill-bar-fill cyan" data-width="90%"></div></div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">C++ <span class="skill-xp">LVL 7</span></span>
+              <span class="skill-name">C++ <span class="skill-xp">LVL 9</span></span>
+              <div class="skill-bar-track"><div class="skill-bar-fill cyan" data-width="90%"></div></div>
+            </div>
+              <div class="skill-item">
+              <span class="skill-name">C <span class="skill-xp">LVL 7</span></span>
               <div class="skill-bar-track"><div class="skill-bar-fill magenta" data-width="70%"></div></div>
             </div>
             <div class="skill-item">
@@ -352,6 +357,8 @@
           <h3 class="skill-category-title"><span class="skill-category-icon">🎒</span> Tools & Platforms</h3>
           <div class="skill-inventory">
             <div class="inventory-item"><span class="item-icon">🔀</span>Git</div>
+            <div class="inventory-item"><span class="item-icon">🛑</span>Valgrind</div>
+            <div class="inventory-item"><span class="item-icon">⚡</span>perf</div>
             <div class="inventory-item"><span class="item-icon">📓</span>Jupyter</div>
             <div class="inventory-item"><span class="item-icon">⚡</span>Supabase</div>
             <div class="inventory-item"><span class="item-icon">▲</span>Vercel</div>
@@ -382,7 +389,8 @@
           </div>
           <div class="project-card-body">
             <ul class="project-description">
-              <li>Open-source macOS CLI tool using low-level system APIs (libproc) to scan running processes, group by parent application, and rank search results with a custom heap-based algorithm</li>
+              <li>Warden is a macOS CLI tool used to give users a fast terminal alternative to the Activity Monitor for managing and terminating processes, using low-level system APIs (libproc) to scan and group running processes by parent application</li>
+              <<li>Includes a live search mode using a min-heap to sort filtered process groups by case-insensitive sub-string matching</li>>
               <li>Configured build system using CMake, validated core logic with unit tests via GoogleTest, and setup installation via Homebrew tap</li>
             </ul>
             <div class="project-tags">
