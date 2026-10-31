@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Steven Kang</title>
+    <meta name="description" content="Portfolio of Steven Kang — Computer Science student at the University of Michigan. Data science research, NLP, full-stack development, and open-source tools.">
+    <meta name="author" content="Steven Kang">
+    <meta property="og:title" content="Projects — Steven Kang">
+    <meta property="og:description" content="Data science research, NLP pipelines, and open-source CLI tools.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">Steven Kang</a>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="projects" class="section">
+        <div class="container">
+          <h1 class="section-title page-title">
+            Projects
+          </h1>
+          <div class="projects-grid">
+            <article class="project-entry">
+              <div class="project-header">
+                <h2 class="project-name">
+                  Warden — macOS Process Manager
+                </h2>
+              </div>
+              <div class="project-body">
+                <ul class="project-description">
+                  <li>
+                    Warden is a macOS CLI tool used to give users a fast terminal alternative to the Activity Monitor for managing and terminating processes, using low-level system APIs (libproc) to scan and group running processes by parent application
+                  </li>
+                  <li>
+                    Includes a live search mode using a min-heap to sort filtered process groups by case-insensitive sub-string matching
+                  </li>
+                  <li>
+                    Configured build system using CMake, validated core logic with unit tests via GoogleTest, and setup installation via Homebrew tap
+                  </li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tech-tag">
+                    C++
+                  </span>
+                  <span class="tech-tag">
+                    CMake
+                  </span>
+                  <span class="tech-tag">
+                    libproc
+                  </span>
+                  <span class="tech-tag">
+                    GoogleTest
+                  </span>
+                  <span class="tech-tag">
+                    Homebrew
+                  </span>
+                </div>
+                <a href="https://github.com/stevenhanwen/Warden" class="project-link" target="_blank" rel="noopener noreferrer">
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+            <article class="project-entry">
+              <div class="project-header">
+                <h2 class="project-name">
+                  Timesheet Management System
+                </h2>
+              </div>
+              <div class="project-body">
+                <ul class="project-description">
+                  <li>
+                    Designed a SQLite database schema for a software firm to efficiently store and query time-sheet records
+                  </li>
+                  <li>
+                    Implemented database models using SQLAlchemy ORM with normalized table relationships
+                  </li>
+                  <li>
+                    Wrote a data cleaning pipeline to standardize raw time-sheet inputs for automated and consistent formatting
+                  </li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tech-tag">
+                    Python
+                  </span>
+                  <span class="tech-tag">
+                    SQLite
+                  </span>
+                  <span class="tech-tag">
+                    SQLAlchemy
+                  </span>
+                  <span class="tech-tag">
+                    Data Cleaning
+                  </span>
+                </div>
+                <span class="project-link">
+                  Innovation for Impact
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <section id="contact" class="footer-contact">
+        <div class="container">
+          <h2 class="section-title">
+            Get In Touch
+          </h2>
+          <p class="contact-tagline">
+            Feel free to contact me through one of the options below
+          </p>
+          <div class="contact-links">
+            <a href="mailto:stevenhk@umich.edu" class="contact-link" id="contact-email">
+              stevenhk@umich.edu
+            </a>
+            <a href="https://github.com/stevenhanwen" class="contact-link" target="_blank" rel="noopener noreferrer" id="contact-github">
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/-steven-kang" class="contact-link" target="_blank" rel="noopener noreferrer" id="contact-linkedin">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="footer-meta">
+        <a href="mailto:stevenhk@umich.edu">stevenhk@umich.edu</a>
+        <p>© 2026 Steven Kang · Built with HTML, CSS &amp; JS</p>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
